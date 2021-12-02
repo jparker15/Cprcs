@@ -1,24 +1,21 @@
 package com.atsignJar.capricious.models;
 
-import org.springframework.data.annotation.Id;
-
+import javax.persistence.Id;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 
 @Entity
 public class User {
-    @Id
-    @GeneratedValue
-    private Long id;
     private String name;
-    private Library library;
-
+    private Shelf shelf;
+    @Id @GeneratedValue private Long id;
     public User(){
 
     }
 
-    public User(String name, Library library){
-
+    public User(String name, Shelf shelf){
+        this.name = name;
+        this.shelf = shelf;
     }
 
     public Long getId() {
@@ -34,11 +31,11 @@ public class User {
         this.name = name;
     }
 
-    public Library getLibrary() {
-        return library;
+    public Shelf getShelf() {
+        return shelf;
     }
 
-    public void setLibrary(Library library) {
-        this.library = library;
+    public void setShelf(Shelf shelf) {
+        this.shelf = shelf;
     }
 }

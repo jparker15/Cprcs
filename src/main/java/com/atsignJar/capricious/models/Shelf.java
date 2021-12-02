@@ -4,20 +4,19 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class Library {
+public class Shelf {
     @Id
     @GeneratedValue
     private Long id;
-    private String libraryName;
-    @OneToMany(targetEntity = Book.class,mappedBy = "library",fetch = FetchType.EAGER)
+    private String name;
     private List <Book> books;
 
 
-    public Library(){
+    public Shelf(){
     }
 
-    public Library(String libraryName) {
-        this.libraryName = libraryName;
+    public Shelf(String name) {
+        this.name = name;
     }
 
 
@@ -30,11 +29,11 @@ public class Library {
         this.id = id;
     }
 
-    public String getLibraryName() {
-        return libraryName;
+    public String getName() {
+        return name;
     }
 
-    public void setLibraryName(String libraryName) {
-        this.libraryName = libraryName;
+    public void setName(String name) {
+        this.name = name;
     }
 }
