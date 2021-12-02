@@ -1,2 +1,4 @@
-package com.atsignJar.capricious.controllers;public class UserController {
+package com.atsignJar.capricious.controllers;
+
+public class UserController {
 }
