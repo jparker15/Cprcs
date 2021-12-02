@@ -7,21 +7,19 @@ import javax.persistence.GeneratedValue;
 @Entity
 public class User {
     private String name;
-    private Shelf shelf;
     @Id @GeneratedValue private Long id;
     public User(){
 
     }
 
-    public User(String name, Shelf shelf){
+    public User(String name){
         this.name = name;
-        this.shelf = shelf;
+
     }
 
     public Long getId() {
         return id;
     }
-
 
     public String getName() {
         return name;
@@ -31,11 +29,5 @@ public class User {
         this.name = name;
     }
 
-    public Shelf getShelf() {
-        return shelf;
-    }
 
-    public void setShelf(Shelf shelf) {
-        this.shelf = shelf;
-    }
 }
