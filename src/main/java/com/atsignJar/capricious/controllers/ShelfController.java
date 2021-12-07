@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/api/libraries")
+@RequestMapping("/api/shelf")
 public class ShelfController {
 
     @Autowired
@@ -21,7 +21,7 @@ public class ShelfController {
 
     @GetMapping
     public @ResponseBody
-    List<Shelf> getAllLibraries(){return repository.findAll();}
+    List<Shelf> getAllShelves(){return repository.findAll();}
 
     @GetMapping("/{id}")
     public ResponseEntity<Shelf> getById(@PathVariable Long id){
