@@ -1,12 +1,11 @@
 package com.atsignJar.capricious.controllers;
 
-import com.atsignJar.capricious.models.Shelf;
+import com.atsignJar.capricious.models.shelf.Shelf;
 import com.atsignJar.capricious.repositories.ShelfRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;

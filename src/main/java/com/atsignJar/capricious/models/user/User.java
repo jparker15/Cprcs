@@ -1,4 +1,4 @@
-package com.atsignJar.capricious.models;
+package com.atsignJar.capricious.models.user;
 
 import javax.persistence.Id;
 import javax.persistence.Entity;
