@@ -1,4 +1,4 @@
-package com.atsignJar.capricious.models;
+package com.atsignJar.capricious.models.book;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
