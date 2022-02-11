@@ -1,4 +1,4 @@
-package com.atsignJar.capricious.models;
+package com.atsignJar.capricious.models.shelf;
 
 import javax.persistence.*;
 import java.util.List;
